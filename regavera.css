@@ -9,3 +9,14 @@
   margin-left: -150px;
   border-radius: 9px;
 }
+.opening-buttons {
+  height: 40px;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  left: 50%;
+  margin-left: -100px;
+}
+#new-game {
+  top: 20px;
+}
