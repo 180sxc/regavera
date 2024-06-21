@@ -2,8 +2,9 @@
 #opening-screen {
   background-color: rgba(0,0,0,0.5);
   height: 200px;
-  width: 200px;
+  width: 300px;
   position: fixed;
   top: 50%;
   left: 50%;
+  margin-left: -150px;
 }
