@@ -17,11 +17,16 @@
   left: 50%;
   margin-left: -100px;
   transition: 0.4s;
-  filter: blur(0px);
+  font-family: "Tiny5", sans-serif;
+  color: white;
+  backdrop-filter: blur(0px);
+  background-color: rgba(255,255,255,0);
+  text-align: center;
 }
 .opening-buttons:hover {
-  filter: blur(5px);
+  backdrop-filter: blur(5px);
   letter-spacing: 3px;
+  background-color: rgba(255,255,255,0.2);
 }
 #new-game {
   top: 20px;
