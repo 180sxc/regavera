@@ -18,12 +18,13 @@
   transition: 0.4s;
   font-family: "Tiny5", sans-serif;
   color: white;
-  backdrop-filter: blur(0px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0);
   background-color: rgba(255,255,255,0);
+  font-size: 23px;
   text-align: center;
 }
 .opening-buttons:hover {
-  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   letter-spacing: 3px;
   background-color: rgba(255,255,255,0.2);
 }
