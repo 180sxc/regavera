@@ -16,6 +16,12 @@
   left: 50%;
   left: 50%;
   margin-left: -100px;
+  transition: 0.4s;
+  filter: blur(0px);
+}
+.opening-buttons:hover {
+  filter: blur(5px);
+  letter-spacing: 3px;
 }
 #new-game {
   top: 20px;
