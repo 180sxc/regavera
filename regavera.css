@@ -1,1 +1,9 @@
 /*styles here*/
+#opening-screen {
+  background-color: rgba(0,0,0,0.5);
+  height: 200px;
+  width: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
