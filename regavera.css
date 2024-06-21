@@ -14,7 +14,6 @@
   width: 200px;
   position: relative;
   left: 50%;
-  left: 50%;
   margin-left: -100px;
   transition: 0.4s;
   font-family: "Tiny5", sans-serif;
@@ -30,4 +29,7 @@
 }
 #new-game {
   top: 20px;
+}
+#information {
+  top: 70px;
 }
