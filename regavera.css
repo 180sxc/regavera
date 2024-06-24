@@ -12,10 +12,6 @@
   left: 0px;
   position: fixed;
 }
-@keyframes slideIn {
-  from {width: 0px;opacity: 0.2;}
-  to {width: 500px;opacity: 1;}
-}
 #side-mask {
   height: 100%;
   width: 500px;
@@ -25,7 +21,6 @@
   mask-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
   background-color: #fff;
   transition: 0.3s;
-  animation: slideIn 1s ease-in-out;
 }
 @keyframes openingButtons {
   from {opacity: 0; translate: transformX(-20px); translate: transfromY(-10px)}
