@@ -13,8 +13,8 @@
   position: fixed;
 }
 @keyframes slideIn {
-  from {width: 100px;}
-  to {width: 500px;}
+  from {width: 0px;opacity: 0.2;}
+  to {width: 500px;opacity: 1;}
 }
 #side-mask {
   height: 100%;
