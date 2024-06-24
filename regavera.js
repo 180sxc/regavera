@@ -1,5 +1,10 @@
-function a () {
-  console.log(1)
+function a() {
+  console.log(1);
 }
-let button = document.getElementById("new-game")
-button.onclick = a
+
+document.addEventListener("DOMContentLoaded", function() {
+  let button = document.getElementById("new-game");
+  if (button) {
+    button.addEventListener("click", a);
+  }
+});
