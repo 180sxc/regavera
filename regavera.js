@@ -10,7 +10,7 @@ function manageGameButtons () {
   //opening buttons
   if(newGame) {
     newGame.onclick = function(){
-      openingScreen?.style.display = "none"
+      if(openingScreen) openingScreen.style.display = 'none'
     }
   }
 }
