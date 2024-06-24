@@ -7,5 +7,5 @@ function getClass(e){
 var newGame = getId("new-game")
 var openingScreen = getId("opening-screen")
 newGame.onclick = () => {
-  openingScreen.style.display = "none"
+  newGame.innerHTML = "works"
 }
