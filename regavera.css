@@ -48,7 +48,7 @@
   box-shadow: 0 0 15px rgba(255, 255, 255, 0);
   background-color: rgba(255,255,255,0);
   font-size: 23px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   animation: openingButtons 1s ease-in;
 }
@@ -62,5 +62,5 @@
   top: 250px;
 }
 #information {
-  top: 280px;
+  top: 260px;
 }
