@@ -12,6 +12,21 @@
   left: 0px;
   position: fixed;
 }
+@keyframes slideIn {
+  from {width: 100px;}
+  to {width: 500px;}
+}
+#side-mask {
+  height: 100%;
+  width: 500px;
+  left: 0px;
+  top: 0px;
+  -webkit-mask-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  mask-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: #fff;
+  transition: 0.3s;
+  animation: slideIn 1s ease-in-out;
+}
 .opening-buttons {
   height: 40px;
   width: 200px;
