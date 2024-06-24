@@ -1,10 +1,10 @@
-function a() {
-  console.log(1);
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  let button = document.getElementById("new-game");
-  if (button) {
-    button.addEventListener("click", a);
+function manageDivs(){
+  let newGame = document.getElementById("new-game");
+  let openingScreen = document.getElementById("opening-screen")
+  if (newGame) {
+    newGame.addEventListener("click", function(){
+      openingScreen.style.display = "none"
+    });
   }
-});
+}
+document.addEventListener("DOMContentLoaded", manageDivs);
