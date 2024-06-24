@@ -13,7 +13,7 @@
   left: 50%;
   margin-left: -150px;
   border-radius: 9px;
-  filter: blur(7px)
+  filter: blur(7px);
 }
 .opening-buttons {
   height: 40px;
