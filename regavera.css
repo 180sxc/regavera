@@ -27,8 +27,7 @@
   width: 500px;
   left: 0px;
   top: 0px;
-  -webkit-mask-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  mask-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
   background-color: #fff;
   transition: 0.3s;
 }
