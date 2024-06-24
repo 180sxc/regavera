@@ -28,7 +28,6 @@
   left: 0px;
   top: 0px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
-  background-color: #fff;
   transition: 0.3s;
 }
 @keyframes openingButtons {
