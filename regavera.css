@@ -20,6 +20,10 @@
   font-size: 80px;
   position: absolute;
   color: black;
+  -webkit-mask-image: linear-gradient(#000, #000);
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(#000, #000);
+  mask-size: 100% 100%;
   top: 10px;
   left: 70px;
 }
