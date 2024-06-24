@@ -17,6 +17,9 @@
   height: 150px;
   font-family: "Indie Flower", cursive;
   font-size: 30px;
+  position: fixed;
+  top: 50px;
+  left: 20px;
 }
 #side-mask {
   height: 100%;
@@ -46,6 +49,7 @@
   font-size: 23px;
   text-align: center;
   text-decoration: none;
+  animation: openingButtons 1s ease-in;
 }
 .opening-buttons:hover {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
