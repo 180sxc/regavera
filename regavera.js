@@ -3,7 +3,9 @@ function loadGame(){
   openingScreen.style.scale = 0.6;
   openingScreen.style.opacity = 0;
   openingScreen.style.transition = 2s;
-  
+  setTimeout(()=>{
+    openingScreen.style.display = "none"
+  },2000)
 }
 function manageDivs(){
   let newGame = document.getElementById("new-game");
