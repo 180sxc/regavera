@@ -1,4 +1,9 @@
 /*styles here*/
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 #opening-screen {
   background-color: rgba(0,0,0,0.5);
   height: 200px;
