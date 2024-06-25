@@ -1,6 +1,7 @@
 function loadGame(){
   let openingScreen = document.getElementById("opening-screen")
   if(openingScreen) {
+    openingScreen.style.animation = "hideScreen 2s ease-in"
     setTimeout(()=>{
       openingScreen.style.display = "none"
     },2000)
