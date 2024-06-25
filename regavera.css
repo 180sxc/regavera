@@ -52,7 +52,6 @@
   font-size: 23px;
   text-align: left;
   text-decoration: none;
-  animation: openingButtons 1s ease-in;
 }
 .opening-buttons:hover {
   letter-spacing: 2px;
@@ -60,13 +59,16 @@
 }
 #new-game {
   top: 250px;
+  animation: openingButtons 1s ease-in;
   animation-delay: 0.5s;
 }
 #information {
   top: 255px;
+  animation: openingButtons 1s ease-in;
   animation-delay: 1s;
 }
 #settings {
   top: 260px;
+  animation: openingButtons 1s ease-in;
   animation-delay: 1.5s;
 }
