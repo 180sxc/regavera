@@ -5,9 +5,11 @@
   user-select: none; /* Standard syntax */
 }
 @keyframes hideScreen {
-  0% {opacity: 1; transform: scale(1);}
-  20% {transform: scale(1.5);}
-  100% {opacity: 0; transform: scale(20);}
+  0% {opacity: 0; bottom: -200px; border-radius: 50%; scale: 1; margin-bottom: 0px;}
+  25% {opacity: 1; bottom: 50%; margin-bottom: -100px; border-radius: 50%; scale: 1}
+  100% {opacity: 1; border-radius: 4px; scale: 10;}
+  30% {background-color: #fff}
+  95% {background-color: #fff0c7}
 }
 #load-animate-screen {
   position: absolute;
