@@ -1,11 +1,11 @@
 function loadGame(){
   let openingScreen = document.getElementById("opening-screen")
   let loadAnimateScreen = document.getElementById("load-animate-screen")
-  if(openingScreen) {
-    openingScreen.style.animation = "hideScreen 2s ease-in"
+  if(loadAnimateScreen) {
+    loadAnimateScreen.style.animation = "hideScreen 4s ease-in"
     setTimeout(()=>{
-      openingScreen.style.display = "none"
-    },2000)
+      loadAnimateScreen.style.display = "none"
+    },4000)
   }
 }
 function manageDivs(){
