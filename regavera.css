@@ -12,7 +12,7 @@
   95% {background-color: #fff0c7}
 }
 #load-animate-screen {
-  position: absolute;
+  position: fixed;
   height: 200px; 
   width: 200px;
   bottom: -200px;
