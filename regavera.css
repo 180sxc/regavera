@@ -23,6 +23,14 @@
   background-color: #fff;
   transition: 0.4s;
 }
+#load-screen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background-color: #fff0c7;
+}
 #opening-screen {
   background-color: rgba(230, 206, 28, 1);
   height: 100vh;
