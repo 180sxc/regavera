@@ -30,6 +30,7 @@
   top: 0px;
   left: 0px;
   background-color: #fff0c7;
+  display: none;
 }
 #opening-screen {
   background-color: rgba(230, 206, 28, 1);
