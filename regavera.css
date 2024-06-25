@@ -6,7 +6,8 @@
 }
 @keyframes hideScreen {
   0% {opacity: 1; transform: scale(1);}
-  100% {opacity: 0; transform: scale(0.4);}
+  20% {transform: scale(1.5);}
+  100% {opacity: 0; transform: scale(6);}
 }
 #opening-screen {
   background-color: rgba(230, 206, 28, 0.6);
