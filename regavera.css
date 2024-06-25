@@ -26,7 +26,7 @@
   color: black;
   top: 10px;
   left: 70px;
-  animation: openingButtons 2s ease-in;
+  animation: fadeIn 2s ease-in;
 }
 #side-mask {
   height: 100%;
@@ -35,8 +35,9 @@
   top: 0px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
   transition: 0.3s;
+  animation: fadeIn 2s ease-in;
 }
-@keyframes openingButtons {
+@keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
@@ -60,16 +61,16 @@
 }
 #new-game {
   top: 250px;
-  animation: openingButtons 1s ease-in;
+  animation: fadeIn 1s ease-in;
   animation-delay: 0.5s;
 }
 #information {
   top: 255px;
-  animation: openingButtons 1s ease-in;
+  animation: fadeIn 1s ease-in;
   animation-delay: 1s;
 }
 #settings {
   top: 260px;
-  animation: openingButtons 1s ease-in;
+  animation: fadeIn 1s ease-in;
   animation-delay: 1.5s;
 }
