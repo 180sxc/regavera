@@ -1,7 +1,9 @@
 function loadGame(){
   let openingScreen = document.getElementById("opening-screen")
   if(openingScreen) {
-    openingScreen.style.display = "none"
+    setTimeout(()=>{
+      openingScreen.style.display = "none"
+    },2000)
   }
 }
 function manageDivs(){
