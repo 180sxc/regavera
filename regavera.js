@@ -2,7 +2,7 @@ function loadGame(){
   let openingScreen = document.getElementById("opening-screen")
   let loadAnimateScreen = document.getElementById("load-animate-screen")
   if(loadAnimateScreen) {
-    loadAnimateScreen.style.animation = "hideScreen 4s ease-in"
+    loadAnimateScreen.style.animation = "hideScreen 2s ease-in-out"
     setTimeout(()=>{
       loadAnimateScreen.style.display = "none"
     },4000)
