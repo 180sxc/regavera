@@ -48,8 +48,7 @@
   position: absolute;
   color: black;
   top: 10px;
-  left: 50%;
-  margin-left: -150px;
+  left: 100px;
   animation: fadeIn 2s ease-in;
 }
 #side-mask {
