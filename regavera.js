@@ -1,11 +1,13 @@
 function loadGame(){
   let openingScreen = document.getElementById("opening-screen")
   let loadAnimateScreen = document.getElementById("load-animate-screen")
+  let loadScreen = document.getElementById("load-screen")
   if(loadAnimateScreen) {
     loadAnimateScreen.style.animation = "hideScreen 2s ease-in-out"
     setTimeout(()=>{
-      loadAnimateScreen.style.display = "none"
-    },4000)
+      loadAnimateScreen.style.display = "none";
+      loadScreen.style.display = "block";
+    },2000)
   }
 }
 function manageDivs(){
