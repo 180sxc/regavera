@@ -2,6 +2,9 @@
 function setUpGame(){
 }
 function loadAssets(){
+  let loader = document.getElementById("loader")
+  loader.style.display = "block";
+  loader.style.animation = "fadeIn 1s ease-out"
 }
 function loadGame(){
   let openingScreen = document.getElementById("opening-screen")
@@ -18,6 +21,7 @@ function loadGame(){
     setTimeout(()=>{
       loadAnimateScreen.style.display = "none";
       loadScreen.style.display = "block";
+      loadAssets();
     },2000)
   }
 }
