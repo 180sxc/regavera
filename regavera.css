@@ -68,6 +68,10 @@
   0% {opacity: 0;}
   90% {opacity: 1;}
 }
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  90% {opacity: 0;}
+}
 .opening-buttons {
   height: 40px;
   width: 200px;
