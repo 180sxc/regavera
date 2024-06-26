@@ -19,16 +19,19 @@ function manageDivs(){
   if(settings) {
     setTimeout(()=>{
       settings.style.display = "block"
+      settings.style.animation = "fadeIn 1s ease-out"
     },1500)
   }
   if(information){
     setTimeout(()=>{
       information.style.display = "block"
+      information.style.animation = "fadeIn 1s ease-out"
     },1000)
   }
   if (newGame) {
     setTimeout(()=>{
       newGame.style.display = "block"
+      newGame.style.display = "fadeIn 1s ease-out"
     },500)
     newGame.addEventListener("click", function(){
       loadGame()
