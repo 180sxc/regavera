@@ -39,6 +39,7 @@
   top: 0px;
   left: 0px;
   position: fixed;
+  padding: 20%;
 }
 #title {
   width: 300px;
@@ -56,8 +57,10 @@
   width: 600px;
   left: 0px;
   top: 0px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%);
   transition: 0.3s;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 @keyframes fadeIn {
   0% {opacity: 0;}
