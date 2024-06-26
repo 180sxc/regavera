@@ -39,20 +39,17 @@
   top: 0px;
   left: 0px;
   position: fixed;
-  background-size: auto 100%;
-  background-position: center;
-  height: 100vh;
 }
 #title {
   width: 300px;
   height: 150px;
   font-family: "Indie Flower", cursive;
   font-size: 80px;
-  position: relative;
+  position: absolute;
   color: black;
   top: 10px;
   left: 100px;
-  animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-out;
 }
 #side-mask {
   height: 100%;
