@@ -10,7 +10,7 @@ function loadGame(){
   let openingButtons = document.querySelectorAll('.opening-buttons');
   if(openingButtons){
     openingButtons.forEach(function(buttons){
-      buttons.style.animation = "fadeOut 1s ease-out"
+      buttons.style.animation = "fadeOut 2s ease-out"
     })
   }
   if(loadAnimateScreen) {
