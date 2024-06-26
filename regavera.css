@@ -87,16 +87,19 @@
   text-decoration: underline;
 }
 #new-game {
+  display: none;
   top: 250px;
   animation: fadeIn 1s ease-in;
   animation-delay: 0.5s;
 }
 #information {
+  display: none;
   top: 255px;
   animation: fadeIn 1s ease-in;
   animation-delay: 1s;
 }
 #settings {
+  display: none;
   top: 260px;
   animation: fadeIn 1s ease-in;
   animation-delay: 1.5s;
