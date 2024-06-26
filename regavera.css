@@ -39,6 +39,7 @@
   top: 0px;
   left: 0px;
   position: fixed;
+  background-position: 100%;
 }
 #title {
   width: 300px;
