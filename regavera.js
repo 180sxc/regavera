@@ -14,7 +14,7 @@ function manageDivs(){
   let newGame = document.getElementById("new-game");
   let information = document.getElementById("information")
   let openingScreen = document.getElementById("opening-screen")
-  openingScreen.style.backgroundImage = "url('https://i.pinimg.com/originals/08/f2/13/08f213d67bd2069184aa90dca44c720e.jpg')";
+  openingScreen.style.backgroundImage = "url('https://art.ngfiles.com/images/1525000/1525565_baukjespirit_pixel-castle-landscape.png?f1606737195')";
   if (newGame) {
     newGame.addEventListener("click", function(){
       loadGame()
