@@ -4,6 +4,7 @@ function setUpGame(){
 function loadAssets(){
   let loader = document.getElementById("loader")
   loader.style.display = "block";
+  loader.style.transform = "rotate(45deg)"
   loader.style.animation = "fadeIn 1s ease-out"
 }
 function loadGame(){
