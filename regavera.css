@@ -7,7 +7,7 @@
 @keyframes hideScreen {
   0% {opacity: 0; bottom: -200px; border-radius: 50%; scale: 1; margin-bottom: 0px;}
   40% {opacity: 1; bottom: 50%; margin-bottom: -100px; border-radius: 50%; scale: 1}
-  100% {opacity: 1; border-radius: 4px; scale: 10;}
+  100% {opacity: 1; border-radius: 4px; scale: 20;}
   30% {background-color: #fff}
   95% {background-color: #fff0c7; margin-bottom: -50;}
   100% {background-color: #fff0c7}
@@ -39,7 +39,8 @@
   top: 0px;
   left: 0px;
   position: fixed;
-  background-position: 100%;
+  background-position: 90%;
+  padding: 20px;
 }
 #title {
   width: 300px;
