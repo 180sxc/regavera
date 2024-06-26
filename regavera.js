@@ -1,7 +1,18 @@
+
+function setUpGame(){
+}
+function loadAssets(){
+}
 function loadGame(){
   let openingScreen = document.getElementById("opening-screen")
   let loadAnimateScreen = document.getElementById("load-animate-screen")
   let loadScreen = document.getElementById("load-screen")
+  let openingButtons = document.querySelectorAll('.opening-buttons');
+  if(openingButtons){
+    openingButtons.forEach(function(buttons){
+      buttons.style.animation = "fadeOut 1s ease-out"
+    })
+  }
   if(loadAnimateScreen) {
     loadAnimateScreen.style.animation = "hideScreen 2s ease-in-out"
     setTimeout(()=>{
