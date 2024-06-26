@@ -118,6 +118,7 @@
   left: 50%;
   margin-top: -48px;
   margin-left: -48px;
+  transform: rotate(45deg);
 }
 
 .loader-square {
