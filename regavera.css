@@ -51,7 +51,7 @@
   color: black;
   top: 10px;
   left: 100px;
-  color: #fff;
+  color: #000;
   animation: fadeIn 2s ease-out;
 }
 #side-mask {
@@ -59,7 +59,7 @@
   width: 600px;
   left: 0px;
   top: 0px;
-  background-image: linear-gradient(to right, rgba(0,0,0, 1) 30%, rgba(0,0,0, 0) 100%);
+  background-image: linear-gradient(to right, rgba(255,255,255, 0.7) 30%, rgba(255,255,255,0) 100%);
   transition: 0.3s;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -76,7 +76,7 @@
   margin-left: -100px;
   transition: 0.4s;
   font-family: "Tiny5", sans-serif;
-  color: white;
+  color: black;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0);
   font-size: 23px;
   text-align: left;
