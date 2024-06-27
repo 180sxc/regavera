@@ -6,13 +6,14 @@ function setUpGame(){
 }
 function loadAssets(){
   let loader = document.getElementById("loader")
+  let loadScreen = document.getElementById("load-screen")
   loader.style.display = "block";
   loader.style.animation = "fadeIn 1s ease-out";
   setTimeout(()=>{
     setUpGame()
-    loader.style.animation = "fadeOut 1s ease-out"
+    loadScreen.style.animation = "fadeOut 1s ease-out"
     setTimeout(()=>{
-      loader.stye.display = "none";
+      loadScreen.style.display = "none";
     },1000)
   },3000)
 }
