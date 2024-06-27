@@ -7,8 +7,10 @@ function setUpGame(){
 function loadAssets(){
   let loader = document.getElementById("loader")
   let loadScreen = document.getElementById("load-screen")
+  let openingScreen = document.getElementById("opening-screen")
   loader.style.display = "block";
   loader.style.animation = "fadeIn 1s ease-out";
+  openingScreen.style.display = "none";
   setTimeout(()=>{
     setUpGame()
     loadScreen.style.animation = "fadeOut 1s ease-out"
