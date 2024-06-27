@@ -26,10 +26,7 @@ function loadAssets(){
   openingScreen.style.display = "none";
   setTimeout(()=>{
     setUpGame()
-    loadScreen.style.animation = "fadeOut 1s ease-out"
-    setTimeout(()=>{
-      loadScreen.style.display = "none";
-    },1000)
+    fadeOut(loadScreen);
   },3000)
 }
 function loadGame(){
