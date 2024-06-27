@@ -1,4 +1,9 @@
-
+function fadeIn(element) {
+  if(element){
+    element.style.display = "block";
+    element.style.animation = "fadeIn 1s ease-out";
+  }
+}
 function setUpGame(){
   const canvas = document.getElementById('game-canvas');
   const ctx = canvas.getContext('2d');
