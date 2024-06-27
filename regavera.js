@@ -8,6 +8,13 @@ function loadAssets(){
   let loader = document.getElementById("loader")
   loader.style.display = "block";
   loader.style.animation = "fadeIn 1s ease-out";
+  setTimeout(()=>{
+    setUpGame()
+    loader.style.animation = "fadeOut 1s ease-out"
+    setTimeout(()=>{
+      loader.stye.display = "none";
+    },1000)
+  },3000)
 }
 function loadGame(){
   let openingScreen = document.getElementById("opening-screen")
