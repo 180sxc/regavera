@@ -1,5 +1,8 @@
 
 function setUpGame(){
+  const canvas = document.getElementById('game-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.style.display = "block";
 }
 function loadAssets(){
   let loader = document.getElementById("loader")
