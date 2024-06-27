@@ -203,11 +203,10 @@
 }
 #side-mask {
   position: relative;
-  height: 95%;
+  height: 100vh;
   width: 600px;
   left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0px;
   background-image: linear-gradient(to right, rgba(255,255,255, 0.7) 30%, rgba(255,255,255,0) 100%);
   transition: 0.3s;
   border-top-left-radius: 8px;
