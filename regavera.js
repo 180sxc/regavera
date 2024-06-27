@@ -4,6 +4,14 @@ function fadeIn(element) {
     element.style.animation = "fadeIn 1s ease-out";
   }
 }
+function fadeOut(element){
+  if(element){
+    element.style.animation = "fadeOut 1s ease-out";
+    element.addEventListener('animationend', () => {
+      element.style.display = 'none';
+    });
+  }
+}
 function setUpGame(){
   const canvas = document.getElementById('game-canvas');
   const ctx = canvas.getContext('2d');
