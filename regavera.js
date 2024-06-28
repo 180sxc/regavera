@@ -5,10 +5,12 @@ function fadeIn(element) {
   }
 }
 function fadeOut(element){
-  if(element){
+  if (element) {
     element.style.animation = "fadeOut 1s ease-out";
     element.addEventListener('animationend', () => {
-      element.style.display = 'none';
+      requestAnimationFrame(() => {
+        element.style.display = 'none';
+      });
     });
   }
 }
