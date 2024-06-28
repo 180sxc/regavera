@@ -16,6 +16,8 @@ let myPlayer = {
   weapon: [],
   src: "", //for animating the character
 }
+function move (){
+}
 function updateMovements () {
 }
 function keyDown (e) {
