@@ -1,6 +1,20 @@
 let config = {
   maxScreenHeight: 1080,
   maxScreenWidth: 1920,
+  items: [],
+  weapons: [],
+  accessories: [],
+}
+let myPlayer = {
+  health: 1000;,
+  maxHealth: 1000,
+  x: 0,
+  y: 0,
+  speed: 5,
+  accessories: [],
+  inventory: [],
+  weapon: [],
+  src: "", //for animating the character
 }
 function fadeIn(element) {
   if(element){
