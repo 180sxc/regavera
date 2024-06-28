@@ -6,7 +6,7 @@ let config = {
   accessories: [],
 }
 let myPlayer = {
-  health: 1000;,
+  health: 1000,
   maxHealth: 1000,
   x: 0,
   y: 0,
@@ -16,6 +16,30 @@ let myPlayer = {
   weapon: [],
   src: "", //for animating the character
 }
+function updateMovements () {
+}
+function keyDown (e) {
+  let movementKeys = [87, 65, 83, 68];
+  let t = e.keyCode
+  if(movementKeys.includes(t)) {
+    
+  }
+}
+function keyUp (e) {
+  let movementKeys = [87, 65, 83, 68];
+}
+document.addEventListener('keydown', keyDown);
+document.addEventListener('keyup', keyUp)
+function updatePlayer () {
+}
+function update() {//game logic here constantly updated
+  
+}
+function runGame() {
+  update()
+  requestAnimationFrame(runGame);
+}
+runGame();
 function fadeIn(element) {
   if(element){
     element.style.display = "block";
