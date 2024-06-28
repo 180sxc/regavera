@@ -1,3 +1,7 @@
+let config = {
+  maxScreenHeight: 1080,
+  maxScreenWidth: 1920,
+}
 function fadeIn(element) {
   if(element){
     element.style.display = "block";
@@ -7,11 +11,9 @@ function fadeIn(element) {
 function fadeOut(element){
   if (element) {
     element.style.animation = "fadeOut 1s ease-out";
-    element.addEventListener('animationend', () => {
-      requestAnimationFrame(() => {
-        element.style.display = 'none';
-      });
-    });
+    setTimeout(function(){
+      element.style.display = "none"
+    }, 900)
   }
 }
 function setUpGame(){
