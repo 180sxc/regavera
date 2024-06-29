@@ -15,26 +15,68 @@ let myPlayer = {
   inventory: [],
   weapon: [],
   src: "", //for animating the character
+  camDir: 0,
 }
-function move (){
+let UTILS = {
+  fixTo: function (n, v) {
+    return parseFloat(n.toFixed(v));
+  },
 }
+let keys = {};
+var moveKeys = {
+    87: [0,-1],
+    38: [0,-1],
+    83: [0,1],
+    40: [0,1],
+    65: [-1,0],
+    37: [-1,0],
+    68: [1,0],
+    39: [1,0]
+};
+function moveDir (){
+  let dx = 0;
+  let dy = 0;
+  for (var key in moveKeys) {
+    var tmpDir = moveKeys[key];
+    dx += !!keys[key] * tmpDir[0];
+    dy += !!keys[key] * tmpDir[1];
+  }
+  return (dx == 0 && dy == 0) ? undefined : UTILS.fixTo(Math.atan2(dy, dx), 2);
+}
+let oldDir = undefined;
 function updateMovements () {
+  let latestDir = moveDir();
+  if(latestDir == undefined || oldDir == undefined || Math.abs(latestDir - oldDir) > 0.3){
+    myPlayer.camDir = latestDir;
+  }
 }
 function keyDown (e) {
-  let movementKeys = [87, 65, 83, 68];
   let t = e.keyCode
-  if(movementKeys.includes(t)) {
-    
+  if(!keys[t]) {
+    keys[t] = 1;
+    if(moveKeys[t]){
+      updateMovements();
+    }
   }
 }
 function keyUp (e) {
   let movementKeys = [87, 65, 83, 68];
+  let t = e.keyCode
+  if(keys[t]) {
+    keys[t] = 0;
+    if(moveKeys[t]){
+      updateMovements();
+    }
+  }
 }
 document.addEventListener('keydown', keyDown);
 document.addEventListener('keyup', keyUp)
 function updatePlayer () {
 }
 function update() {//game logic here constantly updated
+  
+}
+window.onload = function () {
   
 }
 function runGame() {
