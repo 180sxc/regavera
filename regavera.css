@@ -8,6 +8,7 @@
   display: none;
   overflow: hidden;
   border: 1px solid;
+  position: fixed;
 }
 @keyframes hideScreen {
   0% {opacity: 0; bottom: -200px; border-radius: 50%; scale: 1; margin-bottom: 0px;}
