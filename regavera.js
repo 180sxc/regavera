@@ -33,6 +33,16 @@ var moveKeys = {
     68: [1,0],
     39: [1,0]
 };
+Copy
+function move(direction) {
+  if (direction !== undefined) {
+    const dx = Math.cos(direction) * speed;
+    const dy = Math.sin(direction) * speed;
+
+    myPlayer.x += dx;
+    myPlayer.y += dy;
+  }
+}
 function moveDir (){
   let dx = 0;
   let dy = 0;
@@ -48,6 +58,10 @@ function updateMovements () {
   let latestDir = moveDir();
   if(latestDir == undefined || oldDir == undefined || Math.abs(latestDir - oldDir) > 0.3){
     myPlayer.camDir = latestDir;
+  }
+   if(latestDir == undefined || oldDir == undefined || Math.abs(latestDir - oldDir) > 0.3){
+      move(latestDir);
+      oldDir = latestDir;
   }
 }
 function keyDown (e) {
