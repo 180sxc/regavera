@@ -33,7 +33,6 @@ var moveKeys = {
     68: [1,0],
     39: [1,0]
 };
-Copy
 function move(direction) {
   if (direction !== undefined) {
     const dx = Math.cos(direction) * speed;
