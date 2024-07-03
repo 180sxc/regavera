@@ -10,7 +10,7 @@ let myPlayer = {
   maxHealth: 1000,
   x: 0,
   y: 0,
-  speed: 5,
+  speed: 1,
   accessories: [],
   inventory: [],
   weapon: [],
@@ -35,8 +35,8 @@ var moveKeys = {
 };
 function move(direction) {
   if (direction !== undefined) {
-    const dx = Math.cos(direction) * speed;
-    const dy = Math.sin(direction) * speed;
+    const dx = Math.cos(direction) * myPlayer.speed;
+    const dy = Math.sin(direction) * myPlayer.speed;
 
     myPlayer.x += dx;
     myPlayer.y += dy;
