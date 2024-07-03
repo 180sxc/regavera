@@ -14,7 +14,7 @@ let myPlayer = {
   accessories: [],
   inventory: [],
   weapon: [],
-  src: "", //for animating the character
+  sprite: new Image(),
   camDir: 0,
 }
 let UTILS = {
@@ -88,7 +88,10 @@ document.addEventListener('keyup', keyUp)
 function updatePlayer () {
 }
 function update() {//game logic here constantly updated
-  
+  let gameCanvas = document.getElementById('game-canvas');
+  let c = canvas.getContext('2d');
+  myPlayer.sprite.src = "https://upload.wikimedia.org/wikipedia/commons/c/c7/Red_Square.svg"
+  c.drawImage(myPlayer.sprite, myPlayer.x, myPlayer.y, 35, 35);
 }
 window.onload = function () {
   
