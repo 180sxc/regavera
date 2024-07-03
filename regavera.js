@@ -40,6 +40,7 @@ function move(direction) {
 
     myPlayer.x += dx;
     myPlayer.y += dy;
+    console.log(myPlayer.x, myPlayer.y)
   }
 }
 function moveDir (){
