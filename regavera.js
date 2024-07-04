@@ -89,7 +89,7 @@ function updatePlayer () {
 }
 function update() {//game logic here constantly updated
   let gameCanvas = document.getElementById('game-canvas');
-  let c = canvas.getContext('2d');
+  let c = gameCanvas.getContext('2d');
   myPlayer.sprite.src = "https://upload.wikimedia.org/wikipedia/commons/c/c7/Red_Square.svg"
   c.drawImage(myPlayer.sprite, myPlayer.x, myPlayer.y, 35, 35);
 }
