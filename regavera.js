@@ -22,6 +22,7 @@ let UTILS = {
     return parseFloat(n.toFixed(v));
   },
 }
+let DOMPrepared = false;
 let keys = {};
 var moveKeys = {
     87: [0,-1],
@@ -88,6 +89,7 @@ document.addEventListener('keyup', keyUp)
 function updatePlayer () {
 }
 function update() {//game logic here constantly updated
+  if(!DOMPrepared) return;
   let gameCanvas = document.getElementById('game-canvas');
   let c = gameCanvas.getContext('2d');
   myPlayer.sprite.src = "https://upload.wikimedia.org/wikipedia/commons/c/c7/Red_Square.svg"
@@ -156,6 +158,7 @@ function manageDivs(){
   let information = document.getElementById("information")
   let openingScreen = document.getElementById("opening-screen")
   let settings = document.getElementById("settings")
+  DOMPrepared = true;
   openingScreen.style.backgroundImage = "url('https://art.ngfiles.com/images/1525000/1525565_baukjespirit_pixel-castle-landscape.png?f1606737195')";
   if(settings) {
     setTimeout(()=>{
