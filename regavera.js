@@ -21,6 +21,22 @@ let UTILS = {
   fixTo: function (n, v) {
     return parseFloat(n.toFixed(v));
   },
+  eventIsTrusted: function(ev) {
+    if (ev && typeof ev.isTrusted == "boolean") {
+        return ev.isTrusted;
+    } else {
+        return true;
+    }
+  },
+  checkTrusted: function(callback) {
+    return function(ev) {
+      if (ev && ev instanceof Event && UTILS.eventIsTrusted(ev)) {
+        callback(ev);
+      } else {
+        //console.error("Event is not trusted.", ev);
+      }
+    }
+  },
 }
 let DOMPrepared = false;
 let keys = {};
@@ -84,8 +100,8 @@ function keyUp (e) {
     }
   }
 }
-document.addEventListener('keydown', keyDown);
-document.addEventListener('keyup', keyUp)
+document.addEventListener('keydown', UTILS.checkTrusted(keyDown));
+document.addEventListener('keyup', UTILS.checkTrusted(keyUp));
 function updatePlayer () {
 }
 function update() {//game logic here constantly updated
