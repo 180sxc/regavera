@@ -42,7 +42,7 @@ let DOMPrepared = false;
 let keys = {};
 var moveKeys = {
     87: [0,-1],
-    38: [0,-1],\
+    38: [0,-1],
     83: [0,1],
     40: [0,1],
     65: [-1,0],
