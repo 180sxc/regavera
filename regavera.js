@@ -42,7 +42,7 @@ let DOMPrepared = false;
 let keys = {};
 var moveKeys = {
     87: [0,-1],
-    38: [0,-1],
+    38: [0,-1],\
     83: [0,1],
     40: [0,1],
     65: [-1,0],
@@ -103,6 +103,15 @@ function keyUp (e) {
 document.addEventListener('keydown', UTILS.checkTrusted(keyDown));
 document.addEventListener('keyup', UTILS.checkTrusted(keyUp));
 function updatePlayer () {
+  let iswasd = false;
+  for(let key in moveKeys) {
+    if(keys[key]) {
+      iswasd = true;
+    }
+  };
+  if(iswasd) {
+    updateMovements()
+  }
 }
 function update() {//game logic here constantly updated
   if(!DOMPrepared) return;
@@ -111,6 +120,7 @@ function update() {//game logic here constantly updated
   myPlayer.sprite.src = "https://upload.wikimedia.org/wikipedia/commons/c/c7/Red_Square.svg"
   c.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
   c.drawImage(myPlayer.sprite, myPlayer.x, myPlayer.y, 35, 35);
+  updatePlayer()
 }
 window.onload = function () {
   
