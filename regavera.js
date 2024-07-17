@@ -126,7 +126,6 @@ window.onload = function () {
 }
 function runGame() {
   update()
-  updateMovements ()
   requestAnimationFrame(runGame);
 }
 runGame();
