@@ -57,7 +57,6 @@ function move(direction) {
 
     myPlayer.x += dx;
     myPlayer.y += dy;
-    console.log(myPlayer.x, myPlayer.y)
   }
 }
 function moveDir (){
@@ -127,6 +126,7 @@ window.onload = function () {
 }
 function runGame() {
   update()
+  updateMovements ()
   requestAnimationFrame(runGame);
 }
 runGame();
