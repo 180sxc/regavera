@@ -15,7 +15,13 @@ let myPlayer = {
   inventory: [],
   weapon: [],
   sprite: new Image(),
-  camDir: 0,
+}
+let camera = {
+  x: 0,
+  y: 0,
+  width: 1920,
+  height: 1080,
+  dir: 0,
 }
 let UTILS = {
   fixTo: function (n, v) {
@@ -73,7 +79,7 @@ let oldDir = undefined;
 function updateMovements () {
   let latestDir = moveDir();
   if(latestDir == undefined || oldDir == undefined || Math.abs(latestDir - oldDir) > 0.3){
-    myPlayer.camDir = latestDir;
+    camera.dir = latestDir;
   }
    if(latestDir == undefined || oldDir == undefined || Math.abs(latestDir - oldDir) > 0.3){
       move(latestDir);
