@@ -88,10 +88,10 @@ function updateMovements () {
 }
 function keyDown (e) {
   let t = e.keyCode
-  console.log("keydown")
   if(!keys[t]) {
     keys[t] = 1;
     if(moveKeys[t]){
+      console.log("keydown")
       updateMovements();
     }
   }
